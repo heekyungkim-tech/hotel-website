@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Hotel Project Kim</title>
+  </head>
+  <body>
+    <header id="showcase">
+      <h1>Find the Perfect Hotel Deals</h1>
+      <p>We have great deals on most of our hotels in New York</p>
+      <a href="#section-a" class="button">Discover Hotels</a>
+    </header>
+    <section id="section-a">
+      <h2>Hotels Accommodation in New York</h2>
+      <div class="wrapper" >
+        <div id="hotel1">
+          <img src="img/hotel1.jpg" alt="hotel1 image" />
+          <h3>Grand Hyatt Hotel</h3>
+          <div class="star-ratings">
+            <div class="top" style="width: 98%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <div class="bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          </div>
+          <div id="hotelinfo1"></div>
+          <a class="button" id="hotel1_reserve">Book Now</a>
+        </div>
+        <div id="hotel2">
+          <img src="img/hotel2.jpg" alt="hotel2 image" />
+          <h3>Marriott Hotel</h3>
+          <div class="star-ratings">
+            <div class="top" style="width: 84%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <div class="bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          </div>
+          <div id="hotelinfo2"></div>
+          <a class="button" id="hotel2_reserve">Book Now</a>
+        </div>
+        <div id="hotel3">
+          <img src="img/hotel3.jpg" alt="hotel3 image" />
+          <h3>Hyatt Regency Hotel</h3>
+          <div class="star-ratings">
+            <div class="top" style="width: 98%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <div class="bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          </div>
+          <div id="hotelinfo3"></div>
+          <a class="button" id="hotel3_reserve">Book Now</a>
+        </div>
+      </div>
+      <div class="wrapper" >
+        <div id="hotel4">
+          <img src="img/hotel4.jpg" alt="hotel4 image" />
+          <h3>Cassa Hotel</h3>
+          <div class="star-ratings">
+            <div class="top" style="width: 75%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <div class="bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          </div>
+          <div id="hotelinfo4"></div>
+          <a class="button" id="hotel4_reserve">Book Now</a>
+        </div>
+        <div id="hotel5">
+          <img src="img/hotel5.jpg" alt="hotel5 image" />
+          <h3>Renaissance Hotel</h3>
+          <div class="star-ratings">
+            <div class="top" style="width: 84%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <div class="bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          </div>
+          <div id="hotelinfo5"></div>
+          <a class="button" id="hotel5_reserve">Book Now</a>
+        </div>
+        <div id="hotel6">
+          <img src="img/hotel6.jpg" alt="hotel6 image" />
+          <h3>Plaza Hotel</h3>
+          <div class="star-ratings">
+            <div class="top" style="width: 65%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <div class="bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          </div>
+          <div id="hotelinfo6"></div>
+          <a class="button" id="hotel6_reserve">Book Now</a>
+        </div>
+      </div>
+    </section>
+    <div id="arrow" style="display:none;">
+      <a href="#showcase">
+      <div id="goUp"></div></a>
+    </div>
+
+    <div id="reservation">
+      <div class="modal_content">
+        <span class="modal_close">&#9746;</span>
+        <h2>Hotel Booking</h2>
+        <p>To book treatments, please use the booking form below.</p>
+        <hr/>
+        <form class="booking_content" method="post">
+          <div class="checkInOut_data">
+            <div>
+              <label for="checkIn_date">Check In Date</label>
+              <input type="date" id="checkIn" name="checkIn" placeholder="mm/dd/yyyy" />
+            </div>
+            <div>
+              <label for="checkOut_date">Check Out Date</label>
+              <input type="date" id="checkOut" name="checkOut" placeholder="mm/dd/yyyy" />
+            </div>
+          </div>
+          <div class="Rooms">
+            <label for="roomNum">Room Number </label>
+            <input type="number" id="room" name="room" placeholder="RoomNumber" />
+          </div>
+          <ul class="guestNum">
+      			<li>
+      				<label>Adults</label>
+      				<div class="input-text">
+      					<select name="adults">
+      						<option value="1" selected="selected">1</option>
+      						<option value="2">2</option>
+      						<option value="3">3</option>
+      						<option value="4">4</option>
+      					</select>
+      				</div>
+      			</li>
+      			<li>
+      				<label>Children</label>
+      				<div class="input-text">
+      					<select name="children">
+      						<option value="0" selected="selected">0</option>
+      						<option value="1">1</option>
+      						<option value="2">2</option>
+      						<option value="3">3</option>
+      						<option value="4">4</option>
+      					</select>
+      				</div>
+      			</li>
+      		</ul>
+          <div class="discountCode">
+            <label for="discount">Discount Code</label>
+            <input id="discount" type="text" placeholder="Discount Code">
+          </div>
+          <a class="button" id="book">Continue</a>
+        </form>
+        <div>
+      </div>
+    </div>
+
+    <script src="main.js">
+    </script>
+  </body>
+</html>
