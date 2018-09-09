@@ -1,6 +1,6 @@
 # hotel-website
 
-I created a hotel website with HTML, CSS, JavaScript, JQuery.
+I created a hotel website with HTML, CSS, JavaScript, JQuery.<br/>
 Website is created with program simulation; randomly assigned number of clients/user is going to randomly pick a hotel amoung the 6 hotels in the website. Each hotel displays it name, total number of rooms, the number of rooms availble, and the number of stars of the pick hotel. <hr/>
 1. A load events with a message close is added to this website.<br/>
 2. A scroll event is added; when user scroll the webpage down, it should appear an image at the lower-side of the webpage. And when the user click at the image, the webpage should go back to the top of the page.<br/>
