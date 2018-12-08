@@ -3,10 +3,20 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hotel Project Kim</title>
   </head>
   <body>
     <header id="showcase">
+      <div class="nav">
+       <ul>
+         <li><a class="active" href="#">Home</a></li>
+         <li><a href="#section-a">Hotels</a></li>
+         <li><a href="#section-b">Location</a></li>
+         <li><a href="#section-b">Services</a></li>
+         <li><a href="#section-c">Contact</a></li>
+       </ul>
+    </div>
       <h1>Find the Perfect Hotel Deals</h1>
       <p>We have great deals on most of our hotels in New York</p>
       <a href="#section-a" class="button">Discover Hotels</a>
@@ -82,15 +92,14 @@
       <a href="#showcase">
       <div id="goUp"></div></a>
     </div>
-
     <div id="reservation">
       <div class="modal_content">
         <span class="modal_close">&#9746;</span>
         <h2>Hotel Booking</h2>
-        <p>To book treatments, please use the booking form below.</p>
         <hr/>
+        <p>To book treatments, please use the booking form below.</p>
         <form class="booking_content" method="post">
-          <div class="checkInOut_data">
+          <div class="reservation_Date">
             <div>
               <label for="checkIn_date">Check In Date</label>
               <input type="date" id="checkIn" name="checkIn" placeholder="mm/dd/yyyy" />
@@ -135,11 +144,93 @@
           </div>
           <a class="button" id="book">Continue</a>
         </form>
-        <div>
+    </div>
+  </div>
+  <section id="section-b">
+      <div class="column">
+        <h2>Location</h2>
+        <div id="map"></div>
+      </div>
+      <div class="column">
+        <div class="inside-column">
+          <h2>About Hotel Amenities</h2>
+          <ul>
+            <li>99 luxury guest rooms </li>
+            <li>Michelin star restaurant </li>
+            <li>Rooftop cocktail bar </li>
+            <li>infinity pool </li>
+            <li>Free WiFi</li>
+            <li>Free airport pick up/drop off </li>
+          </ul>
+        </div>
+        <div class="inside-column">
+          <div class="services">
+            <img src="img/restaurant.jpg" alt="restaurant">
+            <div class="caption-text">RESTAURANT</div>
+          </div>
+          <div class="services">
+            <img src="img/bar.jpg" alt="bar">
+            <div class="caption-text">BAR</div>
+          </div>
+          <div class="services">
+            <img src="img/pool.jpg" alt="pool">
+            <div class="caption-text">POOL</div>
+          </div>
+          <div class="services">
+            <img src="img/membership.jpg" alt="membership">
+            <div class="caption-text">MEMBERSHIP</div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <section id="section-c">
+    <div class="container">
+      <div class="box">
+        <h3>ABOUT US</h3>
+        <div class="content">
+          <p>When it comes to booking the perfect hotel, vacation rental, we’ve got you covered. <br/> We can help you save up to 40% on hotels, checking 100 sites to find you today’s lowest prices. </p>
+        </div>
+      </div>
+      <div class="box">
+        <h3>NEWSLETTER</h3>
+        <div class="content">
+          <p>Save time, save money! <br/>Sign up and we'll send the best deals to you</p>
+          <form action="#">
+              <div class="input-group">
+                 <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Email Address" required>
+                 <button class="btn btn-lg" type="submit"><i class="fa fa-paper-plane"></i></button>
+              </div>
+             </form>
+        </div>
+      </div>
+      <div class="box">
+        <h3>LATEST TWEETS</h3>
+        <div class="content">
+          <i class="fa fa-twitter"></i>
+          <p>Great location, really pleasant and clean rooms. All of the people are incredibly helpful and generous with their time and advice.</p>
+          <i class="fa fa-twitter"></i>
+          <p>  I was very happy here! The wonderful welcome and friendly service made this hotel feel like a real home, and the perfect location made it easy to slip 'home' for a break </p>
+        </div>
+      </div>
+      <div class="box">
+        <h3>SOCIAL MEDIA</h3>
+        <div class="content">
+          <ul class="social-icons list-inline">
+            <li> <a href="#"><i class="fa fa-instagram - 5px"></i></a></li>
+            <li> <a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-
-    <script src="main.js">
+  </section>
+  <footer>&copy; Copyright 2018 All Rights Reserved</footer>
+    <script src="main.js"></script>
+    <script src="googlemapAPI.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8YMTxicyimpij5nYndrLyaaeQzxIIUm8&callback=initMap">
     </script>
   </body>
 </html>

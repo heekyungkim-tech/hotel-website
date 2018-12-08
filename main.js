@@ -73,7 +73,7 @@ document.getElementById('hotelinfo6').innerHTML = 'Room Capacity: '+ hotel6.room
 
 // load events with message
 var msg = '<div id="msgNote"><a id="close" href="#"> &#9746</a>';
-msg+= '<img id="AdPic" src="img/event.jpg"/>'
+msg+= '<img style="box-shadow:none" id="AdPic" src="img/event.jpg"/>'
 msg+= '<h3>Simply enter this code at checkout</h3>';
 msg+= '<div id="code">Code: HEEKYUNG <br/>'
 msg+= '<a href="#section-a" class="button">Find hotel</a></div>'
@@ -101,7 +101,7 @@ function scrollWindow(){
 }
 window.addEventListener('scroll',scrollWindow,false);
 
-// reservation
+// reservation modal
 var booking = document.getElementById('reservation');
 
 var hotel1_book= document.getElementById("hotel1_reserve");
